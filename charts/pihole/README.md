@@ -6,7 +6,7 @@ Installs pihole in kubernetes
 
 ## Source Code
 
-* <https://github.com/MoJo2600/pihole-kubernetes/tree/main/charts/pihole>
+* <https://github.com/anon-software/pihole-kubernetes/tree/main/charts/pihole>
 * <https://pi-hole.net/>
 * <https://github.com/pi-hole>
 * <https://github.com/pi-hole/docker-pi-hole>
@@ -202,6 +202,7 @@ The following table lists the configurable parameters of the pihole chart and th
 | doh.repository | string | `"crazymax/cloudflared"` | repository |
 | doh.tag | string | `"latest"` |  |
 | dualStack.enabled | bool | `false` | set this to true to enable creation of DualStack services or creation of separate IPv6 services if `serviceDns.type` is set to `"LoadBalancer"` |
+| dualStack.loadBalancer | bool | `false` | set this to true to create a single loadbalancer service. Some loadbalancer implementations do not work well with separate services for IPv4 and IPv6, i.e. klipper-lb (k3s) |
 | extraContainers | list | `[]` |  |
 | extraEnvVars | object | `{}` | extraEnvironmentVars is a list of extra enviroment variables to set for pihole to use |
 | extraEnvVarsSecret | object | `{}` | extraEnvVarsSecret is a list of secrets to load in as environment variables. |
