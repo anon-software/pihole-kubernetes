@@ -1,5 +1,51 @@
 # Changelog
 
+## [2.28.0](https://github.com/anon-software/pihole-kubernetes/compare/pihole-2.27.0...pihole-2.28.0) (2025-01-20)
+
+
+### Features
+
+* add ability to disable admin password ([#274](https://github.com/anon-software/pihole-kubernetes/issues/274)) ([1649b18](https://github.com/anon-software/pihole-kubernetes/commit/1649b1822554599f62dc1da3735d3721305f44ad))
+* add command option to set up readiness probe. ([#323](https://github.com/anon-software/pihole-kubernetes/issues/323)) ([f5c6ad3](https://github.com/anon-software/pihole-kubernetes/commit/f5c6ad3661a2a87e5014aff6c617ea0367177b24))
+* Add context for other custom dnsmasq settings ([#159](https://github.com/anon-software/pihole-kubernetes/issues/159)) ([796d5a3](https://github.com/anon-software/pihole-kubernetes/commit/796d5a33c3cfb4995f0d4bb0c599edde24902a72))
+* Add custom volume for config ([76d3982](https://github.com/anon-software/pihole-kubernetes/commit/76d39822fc4f5fff8cdfc8a4875aa6f0dc084626))
+* Add optional annotations to the password secret ([#287](https://github.com/anon-software/pihole-kubernetes/issues/287)) ([b71d543](https://github.com/anon-software/pihole-kubernetes/commit/b71d54321e4c78f2640e0bbd979f3ebe840b2660))
+* Add optional PodDisruptionBudget ([#272](https://github.com/anon-software/pihole-kubernetes/issues/272)) ([98c3720](https://github.com/anon-software/pihole-kubernetes/commit/98c37207e641be44ce18287f7cf30fe242cf7ea0))
+* Add support for dualstack loadbalancers ([bb340e6](https://github.com/anon-software/pihole-kubernetes/commit/bb340e6ff78f7172f603df00abbc5632edce2b1a))
+* Add support for ingressClassName ([#192](https://github.com/anon-software/pihole-kubernetes/issues/192)) ([1311464](https://github.com/anon-software/pihole-kubernetes/commit/1311464eef6339e3d84d7a57f9caf0cd4fc80a03))
+* Add support for priorityClassName ([#194](https://github.com/anon-software/pihole-kubernetes/issues/194)) ([eb623cb](https://github.com/anon-software/pihole-kubernetes/commit/eb623cbc888446901af5f7d84cc0343fbd0971e1))
+* add support for service extraLabels ([#266](https://github.com/anon-software/pihole-kubernetes/issues/266)) ([4a09a58](https://github.com/anon-software/pihole-kubernetes/commit/4a09a5839e35d075598343bdf138161cf4ed5da7))
+* Add the ability to add extra containers to the Pihole pod ([#260](https://github.com/anon-software/pihole-kubernetes/issues/260)) ([3841501](https://github.com/anon-software/pihole-kubernetes/commit/384150152c36ad3275bb8c8f99313cf6d903f9ac))
+* add the label app.kubernetes.io/name to deployment and services ([#321](https://github.com/anon-software/pihole-kubernetes/issues/321)) ([61ab00d](https://github.com/anon-software/pihole-kubernetes/commit/61ab00d1f7fe0cfabfc426bf484cec46fff6ed11))
+* Add topologySpreadConstraints and bump to 1.10.0 ([#161](https://github.com/anon-software/pihole-kubernetes/issues/161)) ([0d70796](https://github.com/anon-software/pihole-kubernetes/commit/0d70796a720a970579caeba8a7b9c1904c78520f))
+* Adds command type liveness probe ([#257](https://github.com/anon-software/pihole-kubernetes/issues/257)) ([a0143cc](https://github.com/anon-software/pihole-kubernetes/commit/a0143cc181b8e99025cdfa5c72b4fbafad450695))
+* Adds support for linux capabilities ([#258](https://github.com/anon-software/pihole-kubernetes/issues/258)) ([9144813](https://github.com/anon-software/pihole-kubernetes/commit/9144813d6800dd7374abc329b6c501a26bf4bb6c))
+* Bump pihole version to 2024.02.0 ([#283](https://github.com/anon-software/pihole-kubernetes/issues/283)) ([f9ec0af](https://github.com/anon-software/pihole-kubernetes/commit/f9ec0af000d6e4724010e5c18004896031485450))
+* bump pihole version to 2024.03.2 Bump program version [Workflow Run]: https://github.com/MoJo2600/pihole-kubernetes/actions/runs/8555143588 ([#294](https://github.com/anon-software/pihole-kubernetes/issues/294)) ([6e9bd88](https://github.com/anon-software/pihole-kubernetes/commit/6e9bd882a0df505468bcdee2a3a476e2fb39058d))
+* bump pihole version to 2024.05.0 ([#298](https://github.com/anon-software/pihole-kubernetes/issues/298)) ([2b9fada](https://github.com/anon-software/pihole-kubernetes/commit/2b9fada9ea76857e9641935a7637a317451751cd))
+* bump pihole version to 2024.06.0 ([#303](https://github.com/anon-software/pihole-kubernetes/issues/303)) ([7f96afc](https://github.com/anon-software/pihole-kubernetes/commit/7f96afce866cd2dadfbb7d717ad05b87e23538a4))
+* bump pihole version to 2024.07.0 ([#306](https://github.com/anon-software/pihole-kubernetes/issues/306)) ([a119d89](https://github.com/anon-software/pihole-kubernetes/commit/a119d893c9d193b38875f6b7841855f68716ca32))
+* Change to trigger a new Release ([#280](https://github.com/anon-software/pihole-kubernetes/issues/280)) ([dea65aa](https://github.com/anon-software/pihole-kubernetes/commit/dea65aa7d2e17336c63cb4ee8fdbb5f13eceaab6))
+* configurable pathType for the ingress resource ([#317](https://github.com/anon-software/pihole-kubernetes/issues/317)) ([d3c09bc](https://github.com/anon-software/pihole-kubernetes/commit/d3c09bc0a6addc487ceda44b516e0714c06c1875))
+* make DHCP service configurable seperately ([#155](https://github.com/anon-software/pihole-kubernetes/issues/155)) ([e268de0](https://github.com/anon-software/pihole-kubernetes/commit/e268de0bb1028eb0a0c8024112aba369d6812ac0))
+* make pod dns configuration optional ([#170](https://github.com/anon-software/pihole-kubernetes/issues/170)) ([0d8fd33](https://github.com/anon-software/pihole-kubernetes/commit/0d8fd336daaeb53f2b88d888936cf3631c20344d))
+* make port of DNS service configurable ([#151](https://github.com/anon-software/pihole-kubernetes/issues/151)) ([27826e4](https://github.com/anon-software/pihole-kubernetes/commit/27826e4152e251d8ae26495577d0a29eed74d792))
+* Only include custom CNAME file if any are set ([#263](https://github.com/anon-software/pihole-kubernetes/issues/263)) ([b32f253](https://github.com/anon-software/pihole-kubernetes/commit/b32f25386a6f3681b2ff232ecb07f427f8e0220f))
+* **pihole:** allow setting node port through values ([#193](https://github.com/anon-software/pihole-kubernetes/issues/193)) ([5e702a4](https://github.com/anon-software/pihole-kubernetes/commit/5e702a4a0d14163046b35aab9e10ff14adc1bfbd))
+* update chart to use latest docker-pi-hole ([#242](https://github.com/anon-software/pihole-kubernetes/issues/242)) ([41118ff](https://github.com/anon-software/pihole-kubernetes/commit/41118ff351c40449e6d6f1639059e3489840df4f))
+* Updated pihole version to 2024.01.0 ([#277](https://github.com/anon-software/pihole-kubernetes/issues/277)) ([85231b7](https://github.com/anon-software/pihole-kubernetes/commit/85231b7fbba9a61dce700d975d0ccd83cae5b297))
+
+
+### Bug Fixes
+
+* invalid web service manifest generation ([#288](https://github.com/anon-software/pihole-kubernetes/issues/288)) ([b1019dc](https://github.com/anon-software/pihole-kubernetes/commit/b1019dcdd2b3f42ba05dbca8b687ee2627d92411))
+* read spec from serviceTCP value ([7c43871](https://github.com/anon-software/pihole-kubernetes/commit/7c43871d51fdd91fcc51cb86ce1f4e70f5be310a))
+* switch from servicemonitor to podmonitor ([aeae5c3](https://github.com/anon-software/pihole-kubernetes/commit/aeae5c319d8a514303f5e49d519eccafa73365ad))
+* Update Chart.yaml ([#291](https://github.com/anon-software/pihole-kubernetes/issues/291)) ([f10c1fc](https://github.com/anon-software/pihole-kubernetes/commit/f10c1fca167346de4fbd6681cfebd08cae7c13df))
+* Update Notes.txt ([#309](https://github.com/anon-software/pihole-kubernetes/issues/309)) ([0c98981](https://github.com/anon-software/pihole-kubernetes/commit/0c9898127323effa124aef86f492c3935d8bc017)), closes [#307](https://github.com/anon-software/pihole-kubernetes/issues/307)
+* Using env vars instead of configmap for ftlconf ([#205](https://github.com/anon-software/pihole-kubernetes/issues/205)) ([6a83b82](https://github.com/anon-software/pihole-kubernetes/commit/6a83b827226a028dbdaa3a7868d2000e6d4cdffa))
+* wrong customSettings.otherSettings exmaple in values.yaml ([#319](https://github.com/anon-software/pihole-kubernetes/issues/319)) ([67a0e3f](https://github.com/anon-software/pihole-kubernetes/commit/67a0e3fce49f9899bd92f1fad3ed96ae1148b78e)), closes [#318](https://github.com/anon-software/pihole-kubernetes/issues/318)
+
 ## [2.27.0](https://github.com/MoJo2600/pihole-kubernetes/compare/pihole-2.26.2...pihole-2.27.0) (2024-11-28)
 
 
