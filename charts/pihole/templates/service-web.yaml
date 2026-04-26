@@ -34,6 +34,8 @@ spec:
   {{- if .Values.serviceWeb.loadBalancerIP }}
   loadBalancerIP: {{ .Values.serviceWeb.loadBalancerIP }}
   {{- end }}
+  {{- if and (eq .Values.serviceWeb.type "LoadBalancer") .Values.serviceWeb.loadBalancerClass }}
+  loadBalancerClass: {{ .Values.serviceWeb.loadBalancerClass }}
   {{- end }}
   {{- if or (eq .Values.serviceWeb.type "NodePort") (eq .Values.serviceWeb.type "LoadBalancer") }}
   externalTrafficPolicy: {{ .Values.serviceWeb.externalTrafficPolicy }}
@@ -88,6 +90,9 @@ spec:
   ipFamilyPolicy: SingleStack
   {{- if .Values.serviceWeb.loadBalancerIPv6 }}
   loadBalancerIP: {{ .Values.serviceWeb.loadBalancerIPv6 }}
+  {{- end }}
+  {{- if and (eq .Values.serviceWeb.type "LoadBalancer") .Values.serviceWeb.loadBalancerClass }}
+  loadBalancerClass: {{ .Values.serviceWeb.loadBalancerClass }}
   {{- end }}
   {{- if or (eq .Values.serviceWeb.type "NodePort") (eq .Values.serviceWeb.type "LoadBalancer") }}
   externalTrafficPolicy: {{ .Values.serviceWeb.externalTrafficPolicy }}
