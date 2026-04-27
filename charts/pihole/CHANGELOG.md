@@ -24,6 +24,8 @@
 * bump pihole version to 2025.06.2 ([#374](https://github.com/anon-software/pihole-kubernetes/issues/374)) ([75d4519](https://github.com/anon-software/pihole-kubernetes/commit/75d4519ab2fea1a46ed2f4fef38262bbd41eb65f))
 * bump pihole version to 2025.08.0 ([#381](https://github.com/anon-software/pihole-kubernetes/issues/381)) ([83b7196](https://github.com/anon-software/pihole-kubernetes/commit/83b719627f7a1bb6b893eb4af774edba2d7dd08a))
 * bump pihole version to 2025.11.1 ([#396](https://github.com/anon-software/pihole-kubernetes/issues/396)) ([1d9c294](https://github.com/anon-software/pihole-kubernetes/commit/1d9c29410fb6bac45500a2b5d27a26eb7010fcb0))
+* bump pihole version to 2026.04.1 ([995ade6](https://github.com/anon-software/pihole-kubernetes/commit/995ade637e241e6f654ceb007f0d60025c17a2f1))
+* bump pihole version to 2026.04.1 ([9274b13](https://github.com/anon-software/pihole-kubernetes/commit/9274b134031fa054d70c3b51eb78aca8e13cf9d3))
 * Change to trigger a new Release ([#280](https://github.com/anon-software/pihole-kubernetes/issues/280)) ([dea65aa](https://github.com/anon-software/pihole-kubernetes/commit/dea65aa7d2e17336c63cb4ee8fdbb5f13eceaab6))
 * configurable pathType for the ingress resource ([#317](https://github.com/anon-software/pihole-kubernetes/issues/317)) ([d3c09bc](https://github.com/anon-software/pihole-kubernetes/commit/d3c09bc0a6addc487ceda44b516e0714c06c1875))
 * PiHole v6 Support ([#343](https://github.com/anon-software/pihole-kubernetes/issues/343)) ([8112b80](https://github.com/anon-software/pihole-kubernetes/commit/8112b800b98eb6ff23aa19d074b56acd72e1066b))
