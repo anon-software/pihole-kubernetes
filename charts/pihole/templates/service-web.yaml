@@ -34,6 +34,7 @@ spec:
   {{- if .Values.serviceWeb.loadBalancerIP }}
   loadBalancerIP: {{ .Values.serviceWeb.loadBalancerIP }}
   {{- end }}
+  {{- end }}
   {{- if and (eq .Values.serviceWeb.type "LoadBalancer") .Values.serviceWeb.loadBalancerClass }}
   loadBalancerClass: {{ .Values.serviceWeb.loadBalancerClass }}
   {{- end }}
