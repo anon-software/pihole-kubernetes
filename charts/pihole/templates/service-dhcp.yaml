@@ -34,6 +34,7 @@ spec:
   {{- if .Values.serviceDhcp.loadBalancerIP }}
   loadBalancerIP: {{ .Values.serviceDhcp.loadBalancerIP }}
   {{- end }}
+  {{- end }}
   {{- if and (eq .Values.serviceDhcp.type "LoadBalancer") .Values.serviceDhcp.loadBalancerClass }}
   loadBalancerClass: {{ .Values.serviceDhcp.loadBalancerClass }}
   {{- end }}
